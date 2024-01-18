@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>Roof Paradise</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>ROOF TOP PARADISE </h1>
+                                        <img src="data:image/png;base64,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" alt="Logo icon" height="150">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#menu">Menu</a></li>
+                                    <li><a href="#our_team">Team</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                    <li><a href="#pricing"></a></li>
+                                    <li><a href="#reservation">Reservaion</a></li>
+                                    <li><a href="#footer">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
+	
+    <div id="banner" class="banner full-screen-mode parallax">
+        <div class="container pr">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banner-static">
+                    <div class="banner-text">
+                        <div class="banner-cell">
+                            <h1>Dinner with us  <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Friends:Family:Officemates:Collegues" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
+                            <h2> Indulge in delicious food with a breathtaking view. Elevate your dining experience! </h2>
+                            <p>Escape the ordinary and elevate your senses at our rooftop restaurant. Join us!</p>
+                                <a href="#reservation" class="table-btn hvr-underline-from-center">Book my Table</a>
+                            </div>
+                            <a href="#about">
+                                <div class="mouse"></div>
+                            </a>
+                        </div>
+                        <!-- end banner-cell -->
+                    </div>
+                    <!-- end banner-text -->
+                </div>
+                <!-- end banner-static -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end banner -->
+
+    <div id="about" class="about-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title"> About Us </h2>
+                        <h3>IT STARTED, QUITE SIMPLY, LIKE THIS...</h3>
+                        <h4> On a rooftop high, where the sky meets the stars,
+                            A restaurant was born, surpassing all bars.
+                            With a view so grand, it takes your breath away,
+                            A culinary haven, where memories sway.</h4>
+                            
+
+                        <h4> So join us, dear friend, on this rooftop escape,
+                            Where taste and ambiance so perfectly shape.
+                            In this sky-high haven, where dreams come alive,
+                            Our rooftop restaurant, where moments thrive.</h4>
+                            
+        
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <div class="about-images">
+                            <img class="about-main" src="images/about-main.jpg" alt="About Main Image">
+                            <img class="about-inset" src="images/about-inset.jpg" alt="About Inset Image">
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <div class="special-menu pad-top-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title color-white text-center"> Today's Special </h2>
+                        <h5 class="title-caption text-center">Delicious Delights </h5>
+                    </div>
+                    <div class="special-box">
+                        <div id="owl-demo">
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            SALMON STEAKS
+                                            <div class="line"></div>
+                                            <div class="dit-line">Calling all seafood lovers! Dive into a tantalizing Salmon Steak, perfectly grilled to perfection. Juicy, flavorful, and simply irresistible!</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/special-menu-1.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            ITALIAN PIZZA
+                                            <div class="line"></div>
+                                            <div class="dit-line">Buon appetito! Experience a slice of Italy with our mouthwatering Italian pizza. Thin, crispy crust topped with the finest ingredients and melted cheese, it's amore at first bite! </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/special-menu-2.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            VEG. ROLL
+                                            <div class="line"></div>
+                                            <div class="dit-line">Craving something veggielicious? Sink your teeth into our delectable Veg Roll. Packed with a medley of fresh vegetables, flavorful sauces, and a hint of spice, it's a veggie delight that will leave you wanting more!</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/special-menu-3.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                          HYDRABADI BIRYANI
+                                            <div class="line"></div>
+                                            <div class="dit-line"> Craving a flavorful and aromatic dish? Look no further than our Hydrabadi Biryani! Fragrant basmati rice cooked with succulent veggies, aromatic spices, and a medley of veggies. Each bite is a burst of deliciousness that will transport you to food heaven! </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src=" https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2019/05/Hyderabadi-Veg-Biryani-H1.jpg?fit=600%2C900&ssl=1" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                           VINDALOO
+                                            <div class="line"></div>
+                                            <div class="dit-line">Vindaloo is a flavorful curry dish, well known in Goa and Konkan. It is typically made with marinated pork, but it can also be made with chicken, beef, mutton, or paneer. The dish is named after the Portuguese dish, carne de vinha d’alhos, meaning meat marinated in wine vinegar and garlic.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src=" https://pipingpotcurry.com/wp-content/uploads/2019/03/Chicken-Vindaloo-in-Instant-Pot-Piping-Pot-Curry-4.jpg" alt="sp-menu" height="680" width="172" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end special-box -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end special-menu -->
+
+    <div id="menu" class="menu-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+						Our Menu 	
+					</h2>
+                        <p class="title-caption text-center"> </p>
+                    </div>
+                    <div class="tab-menu">
+                        <div class="slider slider-nav">
+                            <div class="tab-title-menu">
+                                <h2>STARTERS</h2>
+                                <p> <i class="flaticon-canape"></i> </p>
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>MAIN DISHES</h2>
+                                <p> <i class="flaticon-dinner"></i> </p>
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>DESERTS</h2>
+                                <p> <i class="flaticon-desert"></i> </p>
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>DRINKS</h2>
+                                <p> <i class="flaticon-coffee"></i> </p>
+                            </div>
+                        </div>
+                        <div class="slider slider-single">
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-01.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>GARLIC BREAD</h3>
+                                            <p>
+                                                The BEST garlic bread has fresh herbs, tons of flavorful garlic, and is perfectly toasted. This garlic bread is a guaranteed crowd-pleaser! 
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$8.5</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-02.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>MIXED SALAD</h3>
+                                            <p>
+                                              It  include Caesar salad, Greek salad, or a refreshing garden salad. It's always a good idea to ask your server for recommendations based on your taste preferences. Enjoy your meal! 🥗😊 
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$25</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-03.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>BBQ CHICKEN WINGS</h3>
+                                            <p>
+                                                The crispy, smoky flavor combined with the tangy and sweet barbeque sauce is just irresistible. They make for a perfect appetizer or even a main course if you're a chicken wing lover like me. Enjoy those finger-licking delicious wings!
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$10</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-04.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>MEAT FEAST PIZZA</h3>
+                                            <p>
+                                                Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken, Chicken Tikka & Grilled Chicken Rashers.
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$5</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-05.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>CHICKEN TIKKA MASALA</h3>
+                                            <p>
+                                                The tender, marinated chicken cooked in a creamy and flavorful tomato-based sauce is simply delicious. It's a classic Indian dish that's loved by many. Pair it with some fragrant basmati rice or warm naan bread for a complete and satisfying meal. Enjoy every flavorful bite! 
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$15</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-06.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>SPICY MEATBALLS</h3>
+                                            <p>
+                                                The tender, marinated chicken cooked in a creamy and flavorful tomato-based sauce is simply delicious. It's a classic Indian dish that's loved by many. Pair it with some fragrant basmati rice or warm naan bread for a complete and satisfying meal. Enjoy every flavorful bite!
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$6.5</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-07.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>CHOCOLATE FUDGECAKE</h3>
+                                            <p>
+                                                The rich, moist chocolate cake layered with decadent fudge frosting is a chocolate lover's dream come true. Each bite is pure bliss, and it's the perfect way to satisfy your sweet tooth. Pair it with a scoop of vanilla ice cream or a dollop of whipped cream for an extra indulgence. Enjoy every heavenly bite of that chocolate fudge cake!
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$4.5</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-08.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>Cappucino</h3>
+                                            <p>
+                                                The combination of smooth espresso, velvety steamed milk, and a touch of frothed milk creates a perfect balance of flavors. Whether you enjoy it in the morning as a pick-me-up or as a cozy treat during the day, a well-made cappuccino can truly brighten your day. So sit back, relax, and savor every sip of that delicious cappuccino!
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$9.5</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-09.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>Rich Stout Beer</h3>
+                                            <p>
+                                                The rich and robust flavors of a stout make it a perfect beer for those who enjoy a deeper and more complex taste. With its dark color and notes of roasted malt, chocolate, and coffee, a well-crafted stout can be a truly satisfying experience. Whether you prefer a classic Irish stout or an imperial stout with higher alcohol content, you're in for a treat. So sit back, relax, and enjoy that delicious stout beer at our restaurant! 
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$10</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-10.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>Refreshing Pilsner Beer</h3>
+                                            <p>
+                                                Its light and refreshing qualities, making it a perfect beer to enjoy on a sunny day or as a thirst-quenching option. With its crisp and clean taste, pilsner is a popular style that originated in the Czech Republic. It's often characterized by its golden color, mild hop bitterness, and smooth maltiness. So go ahead and raise a glass of that delicious pilsner beer from the restaurant! Cheers!
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$12.5</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-09.jpg" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>Rich Stout Beer</h3>
+                                            <p>
+                                                The rich and robust flavors of a stout make it a perfect beer for those who enjoy a deeper and more complex taste. With its dark color and notes of roasted malt, chocolate, and coffee, a well-crafted stout can be a truly satisfying experience. Whether you prefer a classic Irish stout or an imperial stout with higher alcohol content, you're in for a treat. So sit back, relax, and enjoy that delicious stout beer at our restaurant!  
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$9.5</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc_G5oiaW2OJA_U6LDIhpe-eKvizrZq9QfUw&usqp=CAU" alt="" class="img-responsive">
+                                        <div>
+                                            <h3>Latte</h3>
+                                            <p>
+                                                Rof Paradise are known for their excellent coffee, including their lattes. The Bean has a cozy atmosphere and a great selection of drinks to choose from. Enjoy your latte! 
+                                            </p>
+                                        </div>
+                                        <span class="offer-price">$5.5</span>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end tab-menu -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end menu -->
+
+    <div id="our_team" class="team-main pad-top-100 pad-bottom-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+						Our Team 	
+					</h2>
+                        <p class="title-caption text-center">What distinguishes this team is not only their talent, but their relentless commitment to excellence. Their ability to constantly seize opportunities, combined with their professionalism and humility, fills me with immense pride. Every day they give their best, ensuring that our guests' palates are delighted, and their memories enriched. </p>
+                    </div>
+                    <div class="team-box">
+
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sf-team">
+                                    <div class="thumb">
+                                        <a href="#"><img src="images/staff-01.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-col">
+                                        <h3>Alex Doggett</h3>
+                                        <p> Alex is a culinary genius, creating mouthwatering dishes that are not only delicious but also beautifully presented. Their passion for cooking shines through in every creation, and their attention to detail is impeccable. </p>
+                                        <ul class="team-social">
+                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sf-team">
+                                    <div class="thumb">
+                                        <a href="#"><img src="images/staff-02.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-col">
+                                        <h3>Jeffrey Spender</h3>
+                                        <p>He's a renowned British chef known for his fiery personality and culinary expertise. Jeffrey has multiple Michelin-starred restaurants around the world and has hosted several popular cooking shows like "Hell's Kitchen" and "MasterChef."  </p>
+                                        <ul class="team-social">
+                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sf-team">
+                                    <div class="thumb">
+                                        <a href="#"><img src="images/staff-03.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-col">
+                                        <h3>Monica Reyes</h3>
+                                        <p> She is an iconic American chef who revolutionized the way Americans approached French cuisine. Monica's passion for cooking and her charismatic personality made her a beloved figure in the culinary world.</p>
+                                        <ul class="team-social">
+                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </div>
+                    <!-- end team-box -->
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end team-main -->
+
+    <div id="gallery" class="gallery-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+						Our Gallery	
+					</h2>
+                        <p class="title-caption text-center">The photos showcase a delectable array of dishes that will make your taste buds dance with joy. From mixed salads bursting with freshness to mouthwatering barbeque chicken wings, spicy meatballs, and the rich flavors of chicken tikka masala, our menu has something for everyone.</p>
+                    </div>
+                    <div class="gal-container clearfix">
+                        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#1">
+                                    <img src="images/gallery_01.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="1" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_01.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is 1 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#2">
+                                    <img src="images/gallery_02.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_02.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is  2 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#3">
+                                    <img src="images/gallery_03.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="3" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_03.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is 3 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#4">
+                                    <img src="images/gallery_04.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="4" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_04.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is  4 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#5">
+                                    <img src="images/gallery_05.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="5" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_05.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is the 5 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#9">
+                                    <img src="images/gallery_06.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="9" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_06.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is the 6 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#10">
+                                    <img src="images/gallery_07.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="10" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_07.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is the 7 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#11">
+                                    <img src="images/gallery_08.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="11" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_08.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is the 8 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#12">
+                                    <img src="images/gallery_09.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="12" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_09.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is the 9 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#13">
+                                    <img src="images/gallery_10.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="13" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_10.jpg" alt="" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>This is the 10 one on my Gallery</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gal-container -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end gallery-main -->
+
+    <div id="blog" class="blog-main pad-top-100 pad-bottom-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="block-title text-center">
+					Our Blog 	
+				</h2>
+                    <div class="blog-box clearfix">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-01.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p><span>25 NOVEMBER, 2014</span></p>
+                                        <h2>LATEST RECIPES JUST IN!</h2>
+                                        <h5>BY John Doggett</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p><span>2 NOVEMBER, 2014</span></p>
+                                        <h2>NEW RECRUITS HAVE ARRIVED!</h2>
+                                        <h5>BY Jeffrey Spender</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-03.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p><span>4 NOVEMBER, 2014</span></p>
+                                        <h2>BAKING TIPS FROM THE PROS</h2>
+                                        <h5>BY Monica Reyes</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-04.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p><span>12 NOVEMBER, 2014</span></p>
+                                        <h2>ALL YOUR EGGS BELONG TO US</h2>
+                                        <h5>BY John Doggett</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                    </div>
+                    <!-- end blog-box -->
+
+                    <div class="blog-btn-v">
+                        <a class="hvr-underline-from-center" href="#">View the Blog</a>
+                    </div>
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end blog-main -->
+
+    <div id="pricing" class="pricing-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item -->
+
+                    <!-- item -->
+                    <div class="col-md-4 col-sm-4 text-center">
+                        
+                                  
+                                
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item -->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end pricing-main -->
+
+    <div id="reservation" class="reservations-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="form-reservations-box">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="block-title text-center">
+						Reservations			
+					</h2>
+                        </div>
+                        <h4 class="form-title">BOOKING FORM</h4>
+                        <p>PLEASE FILL OUT ALL REQUIRED* FIELDS. THANKS!</p>
+
+                        <form id="contact-form" method="post" class="reservations-box" name="contactform" action="mail.php">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="form_name" id="form_name" placeholder="Name" required="required" data-error="Firstname is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="email" name="email" id="email" placeholder="E-Mail ID" required="required" data-error="E-mail id is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="phone" id="phone" placeholder="contact no.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="no_of_persons" id="no_of_persons" class="selectpicker">
+                                        <option selected disabled>No. Of persons</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="date-picker" id="date-picker" placeholder="Date" required="required" data-error="Date is required." />
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="time-picker" id="time-picker" placeholder="Time" required="required" data-error="Time is required." />
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="preferred_food" id="preferred_food" class="selectpicker">
+                                        <option selected disabled>preferred food</option>
+                                        <option>Indian</option>
+                                        <option>Continental</option>
+                                        <option>Mexican</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <select name="occasion" id="occasion" class="selectpicker">
+                                        <option selected disabled>Occasion</option>
+                                        <option>Wedding</option>
+                                        <option>Birthday</option>
+                                        <option>Anniversary</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="reserve-book-btn text-center">
+                                    <button class="hvr-underline-from-center" type="submit" value="SEND" id="submit">BOOK MY TABLE </button>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </form>
+                        <!-- end form -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end reservations-box -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end reservations-main -->
+
+    <div id="footer" class="footer-main">
+        <div class="footer-news pad-top-100 pad-bottom-70 parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="ft-title color-white text-center"> Newsletter </h2>
+                            <p></p>
+                        </div>
+                        <form>
+                            <input type="email" placeholder="Enter your e-mail id">
+                            <a href="#" class="orange-btn"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+                        </form>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <img src="data:image/png;base64,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 "  height="150" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>We refuse to compromise on quality in our restaurant. That's why we source our fresh ingredients from local farmers' markets. No matter what time of year, you can be sure you're eating the best of the season.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-youtube"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>New Menu</h3>
+                                <ul>
+                                    <li><a href="#">Italian Bomba Sandwich</a></li>
+                                    <li><a href="#">Veg/Non-veg Vindaloo</a></li>
+                                    <li><a href="#">Malai Methi Matar</a></li>
+                                    <li><a href="#">veg/Non-veg Rice Bowls</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>Rooftop Paradise ,Moshi </span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+									+91 4849856 
+								</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">support@Rooftopparadise.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Opening Hours</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Monday - Thursday </p>
+                                        <span> 11:00 AM - 9:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <p>Friday - Saturday </p>
+                                        <span>  11:00 AM - 6:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2018 Rooftop Paradise is powered by <a href="https://themewagon.com/" target="_blank">Technosoft</a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <section id="color-panel" class="close-color-panel">
+        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <!-- Colors -->
+        <div class="segment">
+            <h4 class="gray2 normal no-padding">Color Scheme</h4>
+            <a title="orange" class="switcher orange-bg"></a>
+            <a title="strong-blue" class="switcher strong-blue-bg"></a>
+            <a title="moderate-green" class="switcher moderate-green-bg"></a>
+            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+        </div>
+    </section>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
